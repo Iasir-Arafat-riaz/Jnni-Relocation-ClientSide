@@ -9,7 +9,7 @@ const Header = () => {
         navigate("/Home")
     }
   return (
-    <div>
+    <div className="jinniHeder">
       <div className="text-center">
         <h1 onClick={goHome} className="company-name ">
           <img
@@ -32,6 +32,7 @@ const Header = () => {
               <Nav className="m-auto">
                 <Navbar.Brand>
                   <NavLink
+                 
                     to="/home"
                     style={({ isActive }) => ({
                       color: isActive ? "navy" : "beige",
