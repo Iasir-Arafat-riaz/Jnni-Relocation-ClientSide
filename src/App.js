@@ -11,6 +11,8 @@ import ServiceReview from "./pages/Dashboard/ServiceReview/ServiceReview";
 import AllServices from "./pages/Services/AllServices/AllServices";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Contact from "./pages/Contact/Contact";
+import Login from "./pages/UserSignin/Login/Login";
+import Register from "./pages/UserSignin/Register/Register";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="/Services"element={<AllServices/>}/>
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/AboutUs" element={<AboutUs/>}/>
+          <Route path="Login" element={<Login/>} />
+          <Route path="Register" element={<Register/>} />
           <Route path="/Dashboard" element={<DashboardMain />}>
             <Route path="MyBooking" element={<MyBooking />} />
             <Route path="ServiceReview" element={<ServiceReview />} />
