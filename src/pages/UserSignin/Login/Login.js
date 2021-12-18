@@ -1,10 +1,58 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import useFirebase from '../../../hooks/useFirebase';
+import "./Login.css"
 const Login = () => {
+
+    const [userLoggedIn,setUserLoggedIn]=useState({})
+const location = useLocation()
+const navigate = useNavigate()
+    const {googleSignIn,error}=useFirebase()
+
+    //login with email and password
+    const loginInput=(e)=>{
+        console.log(e.target.value)
+        const name =e.target.name;
+        const fieldValue= e.target.value;
+    
+        const signInUser ={...userLoggedIn}
+        signInUser[name]=fieldValue;
+        setUserLoggedIn(signInUser)
+    
+      }
+      console.log(userLoggedIn)
+      const userLogin=(e)=>{
+    
+        // visitorLogIn(userLoggedIn.email,userLoggedIn.password,history,location)
+        
+        e.preventDefault()
+      }
+
     return (
-        <div>
-            Please Login
-        </div>
+        <div className="login-section  text-center">
+        <h2 className="loginHeader">Please Login </h2>
+        <h6 className="text-danger">
+              <b>{error}</b>
+            </h6>
+        <form onSubmit={userLogin} action="">
+        <input placeholder="Enter Your Email" name="email" type="email" onBlur={loginInput} />
+        <br/>
+        <input placeholder="Enter Your Password" onBlur={loginInput} type="password" name="password" id="" />
+        <br/>
+        <input type="submit" value="Login Now" className="login-button" />
+        </form>
+  <br />
+        <Button onClick={()=>googleSignIn(navigate,location)} variant="warning">
+          <b>Login with google</b>
+        </Button>
+  <br/>
+  <br/>
+  
+        
+        <br />
+        <Link className='pleaseRegister' to="/Register"><h3 ><span className='newUsermsg'>New user? just click Here</span> </h3></Link>
+      </div>
     );
 };
 

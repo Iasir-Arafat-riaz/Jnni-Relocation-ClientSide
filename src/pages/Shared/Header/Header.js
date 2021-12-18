@@ -1,6 +1,9 @@
+import { signOut } from "firebase/auth";
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink, useNavigate } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
+import useFirebase from "../../../hooks/useFirebase";
 import "./Header.css";
 
 const Header = () => {
@@ -8,6 +11,8 @@ const Header = () => {
     const goHome=()=>{
         navigate("/Home")
     }
+    // const {user,logOut}=useFirebase()
+    const {user,logOut}=useAuth()
   return (
     <div className="jinniHeder">
       <div className="text-center">
@@ -124,21 +129,22 @@ const Header = () => {
                 </Navbar.Brand>
               </Nav>
             </Navbar.Collapse>
-            {/* {user.email && (
+            {user.email && (
               <img className="header-img" src={user.photoURL} alt="" />
             )}
             {user.email && (
               <span className="text-light mx-1">{user?.displayName}</span>
             )}
             {user.email ? (
-              <button onClick={logout} className="btn btn-warning">
-                Logout
+              
+              <button onClick={logOut}  className="logOutHdr">
+               <b> Logout</b>
               </button>
             ) : (
               <Link to="/login">
-                <button className="btn btn-success">Login</button>
+                <button className="loginButtonHdr"><b>Login</b></button>
               </Link>
-            )} */}
+            )}
           </Container>
         </Navbar>
       </div>

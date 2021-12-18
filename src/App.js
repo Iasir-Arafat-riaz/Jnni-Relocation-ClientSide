@@ -13,10 +13,14 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Contact from "./pages/Contact/Contact";
 import Login from "./pages/UserSignin/Login/Login";
 import Register from "./pages/UserSignin/Register/Register";
+import DashboardDefault from "./pages/Dashboard/DashboardDefault/DashboardDefault";
+import Payment from "./pages/Payment/Payment";
+import ContextApiProvider from "./ContextApiProvider/ContextApiProvider";
 
 function App() {
   return (
     <div >
+      <ContextApiProvider>
       <Router>
         <Header />
         <Routes>
@@ -29,12 +33,16 @@ function App() {
           <Route path="Login" element={<Login/>} />
           <Route path="Register" element={<Register/>} />
           <Route path="/Dashboard" element={<DashboardMain />}>
+            <Route exact path="/Dashboard" element={<DashboardDefault/>} />
             <Route path="MyBooking" element={<MyBooking />} />
             <Route path="ServiceReview" element={<ServiceReview />} />
+            <Route path="Payment" element={<Payment/>} />
           </Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
       </Router>
+      </ContextApiProvider>
+      
     </div>
   );
 }
