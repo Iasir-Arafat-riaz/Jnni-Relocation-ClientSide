@@ -1,10 +1,10 @@
-import React from "react";
-import { Spinner } from "react-bootstrap";
-import { Navigate } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
+import React from 'react';
+import { Spinner } from 'react-bootstrap';
+import { Navigate } from 'react-router-dom';
+import useAuth from '../hooks/useAuth';
 
-const PrivateRoute = ({ children }) => {
-  const { user, isLoading } = useAuth();
+const AdminRoute = ({children}) => {
+    const { user, isLoading } = useAuth();
   if (isLoading) {
     return (
       <div style={{ color: "red", textAlign: "center" }}>
@@ -16,4 +16,4 @@ const PrivateRoute = ({ children }) => {
   return <div>{user.email ? children : <Navigate to="/login" />}</div>
 };
 
-export default PrivateRoute;
+export default AdminRoute;

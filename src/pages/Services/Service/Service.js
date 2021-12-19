@@ -21,7 +21,7 @@ const Service = ({singleService}) =>{
              {detail}
             </Card.Text>
           </Card.Body>
-          <button onClick={serviceBooking} className="serviceBook"><b>Book Now</b></button>
+          <button onClick={serviceBooking} className="serviceBook"><b>Book Now <i class="fas fa-shipping-fast"></i></b> </button>
         </Card>
       </Col>
     </div>

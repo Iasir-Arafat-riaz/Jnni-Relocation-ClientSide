@@ -39,24 +39,24 @@ const DashboardMain = () => {
             >
               <i class="fas fa-shopping-cart me-2"></i>Add Service
             </Link>
-            <a
-              href="#"
+            <Link
+              to="/Dashboard/ManageServices"
               class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             >
-              <i class="fas fa-gift me-2"></i>Products
-            </a>
-            <a
-              href="#"
+              <i class="fas fa-gift me-2"></i>Manage Services
+            </Link>
+            <Link
+              to="/Dashboard/ManageOrder"
               class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             >
-              <i class="fas fa-comment-dots me-2"></i>Chat
-            </a>
-            <a
-              href="#"
+              <i class="fas fa-comment-dots me-2"></i>Manage Order
+            </Link>
+            <Link
+              to="/Dashboard/MakeAdmin"
               class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             >
-              <i class="fas fa-map-marker-alt me-2"></i>Outlet
-            </a>
+              <i class="fas fa-map-marker-alt me-2"></i>Make Admin
+            </Link>
            
             <Link
             onClick={logOut}

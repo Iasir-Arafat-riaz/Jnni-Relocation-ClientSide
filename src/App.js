@@ -19,6 +19,9 @@ import ContextApiProvider from "./ContextApiProvider/ContextApiProvider";
 import AddService from "./pages/Dashboard/AddService/AddService";
 import PrivateRoute from "./Private/PrivateRoute";
 import Booking from "./Booking/Booking";
+import ManageServices from "./pages/Dashboard/ManageServices/ManageServices";
+import ManageOrder from "./pages/Dashboard/ManageOrder/ManageOrder";
+import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
 
 function App() {
   return (
@@ -42,6 +45,9 @@ function App() {
             <Route path="ServiceReview" element={<ServiceReview />} />
             <Route path="Payment" element={<Payment/>} />
             <Route path="AddService" element={<AddService/>} />
+            <Route path="ManageServices" element={<ManageServices/>}/>
+            <Route path="ManageOrder" element={<ManageOrder/>} />
+            <Route path="MakeAdmin" element={<MakeAdmin/>} />
           </Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>

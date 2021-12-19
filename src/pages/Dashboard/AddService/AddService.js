@@ -35,7 +35,7 @@ const AddService = () => {
     const onSubmit = (data) => {
       //   const dataobject ={bookingInfo:     }
         console.log(data)
-        axios.post("http://localhost:2021/services",data)
+        axios.post("https://afternoon-dawn-04949.herokuapp.com/services",data)
         .then(respo=>{
             console.log(respo);
             if(respo.status==200){

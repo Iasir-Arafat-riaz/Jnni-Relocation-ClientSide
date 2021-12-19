@@ -11,7 +11,7 @@ const Booking = () => {
   const [booking, setBooking] = useState({});
   console.log(id);
   useEffect(() => {
-    fetch(`http://localhost:2021/services/${id}`)
+    fetch(`https://afternoon-dawn-04949.herokuapp.com/services/${id}`)
       .then((res) => res.json())
       .then((data) => setBooking(data));
   }, []);
@@ -28,7 +28,7 @@ const Booking = () => {
     // data.status = "pending";
     console.log(data);
 
-axios.post("http://localhost:2021/booking",data)
+axios.post("https://afternoon-dawn-04949.herokuapp.com/booking",data)
 .then(res=>{
     if(res.status===200){
         Swal.fire("Successfully Booked");

@@ -5,7 +5,7 @@ import SingleService from "./SingleService/SingleService";
 const Recommended = () => {
   const [recomended, setRecomended] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:2021/services")
+    fetch("https://afternoon-dawn-04949.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setRecomended(data));
   }, []);
@@ -24,7 +24,7 @@ const Recommended = () => {
           </Row>
         </div>
 
-        <div className="col-md-4 col-sm-12">
+        <div data-aos="fade-up" className="col-md-4 col-sm-12">
           <h4>
             Planning to shift your house to a new location? Looking for
             hassle-free house shifting services in Bangladesh near you for safe
