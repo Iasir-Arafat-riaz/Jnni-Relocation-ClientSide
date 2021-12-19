@@ -25,7 +25,7 @@ const Recommended = () => {
         </div>
 
         <div className="col-md-4 col-sm-12">
-          <h6>
+          <h4>
             Planning to shift your house to a new location? Looking for
             hassle-free house shifting services in Bangladesh near you for safe
             relocation? Don’t worry. Welcome To India Packers And Movers Company
@@ -43,7 +43,7 @@ const Recommended = () => {
             move your goods to a new location in a stress-free way. At India
             Packers Group, we have come a long way in serving our clients in the
             best way.
-          </h6>
+          </h4>
         </div>
       </div>
     </div>

@@ -1,6 +1,8 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
+import Swal from "sweetalert2";
 import useAuth from "../hooks/useAuth";
 import "./Booking.css";
 
@@ -23,8 +25,17 @@ const Booking = () => {
     const date = new Date();
     const localDate = date.toLocaleDateString();
     data.orderDate = localDate;
-    data.status = "pending";
+    // data.status = "pending";
     console.log(data);
+
+axios.post("http://localhost:2021/booking",data)
+.then(res=>{
+    if(res.status===200){
+        Swal.fire("Successfully Booked");
+        reset();
+    }
+})
+
   };
   return (
     <div className="purchase">
@@ -33,9 +44,9 @@ const Booking = () => {
           <div className="prodDetail">
             <img src={img} alt="image"></img>
             <h3>{service}</h3>
-            <h5>
+            {/* <h5>
               <b>Original Model: {origin}</b>
-            </h5>
+            </h5> */}
             <h5>
               <b>Fixed Price: {cost}TK</b>
             </h5>
@@ -76,7 +87,7 @@ const Booking = () => {
                 required
                 value={service}
                 // placeholder="enter Customize bike name"
-                {...register("customModel")}
+                {...register("serviceName")}
               />
               <input
                 required

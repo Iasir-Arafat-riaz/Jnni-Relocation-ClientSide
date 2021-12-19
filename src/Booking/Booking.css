@@ -40,12 +40,13 @@ border-radius: 15px;}
     padding: 40px;
 }
 .submitBtnBook{
-    background-color: rgb(233, 151, 136);
+    background-color: rgb(20, 8, 6);
+    color: wheat;
     border: 0;
     padding: 10px;
 }
 .submitBtnBook:hover{
-    background-color: darkblue;
+    background-color: rgb(6, 6, 105);
     color: white;
 
 }
