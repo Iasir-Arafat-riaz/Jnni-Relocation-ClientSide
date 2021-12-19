@@ -28,7 +28,7 @@ console.log(e.target);
         {/* <label>Email</label> */}
         <input required placeholder="Enter Your Email" type="email" name="user_email" />
         {/* <label>Message</label> */}
-        <textarea required placeholder="Please Write message Here"  name="message" />
+        <textarea className='contact-text' required placeholder="Please Write message Here"  name="message" />
         <input id="contact-submitBtn" type="submit" value="Send" />
       </form>
      </div>

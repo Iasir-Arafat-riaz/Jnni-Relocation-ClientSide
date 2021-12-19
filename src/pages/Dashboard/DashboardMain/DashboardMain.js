@@ -28,16 +28,16 @@ const DashboardMain = () => {
               <i class="fas fa-chart-line me-2"></i>Review
             </Link>
             <Link
-             to="/dashboard/Payment"
+             to="/Dashboard/Payment"
               class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             >
               <i class="fas fa-paperclip me-2"></i>Payment
             </Link>
             <Link
-              to="/dash"
+              to="/Dashboard/AddService"
               class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             >
-              <i class="fas fa-shopping-cart me-2"></i>Store Mng
+              <i class="fas fa-shopping-cart me-2"></i>Add Service
             </Link>
             <a
               href="#"

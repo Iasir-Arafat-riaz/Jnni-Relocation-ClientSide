@@ -29,7 +29,8 @@ const Header = () => {
           expand="lg"
           bg="secondary"
           variant="dark"
-          className="text-center"
+          className="text-center jinni-navbar "
+          sticky="top"
         >
           <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -68,7 +69,7 @@ const Header = () => {
                 <Navbar.Brand>
                   {""}
                   <NavLink
-                    to="/dashboard"
+                    to="/Dashboard"
                     style={({ isActive }) => ({
                       color: isActive ? "navy" : "beige",
                     })}

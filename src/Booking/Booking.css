@@ -1,0 +1,51 @@
+.prodDetail img{ width: 80%
+    ;
+border-radius: 15px;}
+
+.prodDetail{
+    /* margin-top: 40px; */
+    padding: 40px;
+    text-align: center;
+}
+.purchase{
+    padding-top: 40px;
+    padding-bottom: 150px;
+}
+.detail{
+    padding: 0 40px;
+    color: rgb(92, 97, 97);
+}
+
+/* purchase form habdle */
+.purchase{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.purchase form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.purchase form input{
+    width: 70%;
+    margin: 5px;
+    padding: 5px;
+}
+.place-order-mainDiv{
+    margin-bottom: 100px;
+}
+.booking-form{
+    padding: 40px;
+}
+.submitBtnBook{
+    background-color: rgb(233, 151, 136);
+    border: 0;
+    padding: 10px;
+}
+.submitBtnBook:hover{
+    background-color: darkblue;
+    color: white;
+
+}

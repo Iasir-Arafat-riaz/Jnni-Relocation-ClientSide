@@ -1,0 +1,12 @@
+.serviceBook{
+    background-color: rgb(202, 202, 143);
+    padding: 7px;
+    border: 0px;
+}
+.serviceBook:hover{
+    background-color: cadetblue;
+    color: white;
+}
+.serviceTxt{
+    /* text-align: justify; */
+}

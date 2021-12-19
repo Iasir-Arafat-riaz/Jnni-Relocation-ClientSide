@@ -16,6 +16,9 @@ import Register from "./pages/UserSignin/Register/Register";
 import DashboardDefault from "./pages/Dashboard/DashboardDefault/DashboardDefault";
 import Payment from "./pages/Payment/Payment";
 import ContextApiProvider from "./ContextApiProvider/ContextApiProvider";
+import AddService from "./pages/Dashboard/AddService/AddService";
+import PrivateRoute from "./Private/PrivateRoute";
+import Booking from "./Booking/Booking";
 
 function App() {
   return (
@@ -28,15 +31,17 @@ function App() {
           <Route path="/Home" element={<HomeMain />}></Route>
           <Route path="/Home" element={<HomeMain />}></Route>
           <Route path="/Services"element={<AllServices/>}/>
+          <Route path="/Service/:id" element={<Booking></Booking>} />
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/AboutUs" element={<AboutUs/>}/>
           <Route path="Login" element={<Login/>} />
           <Route path="Register" element={<Register/>} />
           <Route path="/Dashboard" element={<DashboardMain />}>
-            <Route exact path="/Dashboard" element={<DashboardDefault/>} />
+            <Route exact path="/Dashboard" element={<PrivateRoute><DashboardDefault/></PrivateRoute>} />
             <Route path="MyBooking" element={<MyBooking />} />
             <Route path="ServiceReview" element={<ServiceReview />} />
             <Route path="Payment" element={<Payment/>} />
+            <Route path="AddService" element={<AddService/>} />
           </Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
