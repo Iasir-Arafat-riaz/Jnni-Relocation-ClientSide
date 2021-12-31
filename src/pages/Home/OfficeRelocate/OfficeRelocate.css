@@ -17,17 +17,20 @@ h1,h3{
 .photo-details{
     position: absolute;
     top: 0;
-    color: wheat;
+    color: rgb(252, 248, 241);
    
     display: none;
+    padding: 10px;
+    text-align: justify;
 }
 .photo-frame:hover .photo-details{
     display: block;
-    background-color: rgba(128, 128, 128, 0.39);
+    background-color: rgba(109, 106, 106, 0.39);
 }
 .photo-details h3{
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    /* justify-content: center; */
+    color: rgb(20, 22, 90);
 }
 .photo-album{
     /* display: flex; */

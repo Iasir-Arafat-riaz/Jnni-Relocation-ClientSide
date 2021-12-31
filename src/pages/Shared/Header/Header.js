@@ -66,7 +66,7 @@ const Header = () => {
                   </NavLink>
                 </Navbar.Brand>
 
-                <Navbar.Brand>
+               {user.email&&  <Navbar.Brand>
                   {""}
                   <NavLink
                     to="/Dashboard"
@@ -80,7 +80,7 @@ const Header = () => {
                       <b> DashBoard</b>
                     </h4>
                   </NavLink>
-                </Navbar.Brand>
+                </Navbar.Brand>}
 
                 <Navbar.Brand>
                   {" "}

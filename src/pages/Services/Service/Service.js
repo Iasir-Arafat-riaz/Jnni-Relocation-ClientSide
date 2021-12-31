@@ -17,9 +17,10 @@ const Service = ({singleService}) =>{
           <Card.Body>
             <Card.Title className="text-center ">{service}</Card.Title>
             <h6 className="text-center">Starting price {cost}TK</h6>
-            <Card.Text className="serviceTxt">
-             {detail}
-            </Card.Text>
+            <small> {detail}</small>
+            {/* <Card.Text className="serviceTxt">
+            
+            </Card.Text> */}
           </Card.Body>
           <button onClick={serviceBooking} className="serviceBook"><b>Book Now <i class="fas fa-shipping-fast"></i></b> </button>
         </Card>

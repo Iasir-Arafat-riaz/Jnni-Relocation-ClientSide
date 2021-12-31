@@ -1,0 +1,15 @@
+.singleReview{
+    
+    height: 250px;
+   
+    padding: 10px;
+}
+#rev{
+    background-color: rgba(182, 234, 250, 0.849);
+    padding: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+.icons{
+    color:rgb(241, 178, 16);
+}

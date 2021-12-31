@@ -39,8 +39,8 @@ function App() {
           <Route path="/AboutUs" element={<AboutUs/>}/>
           <Route path="Login" element={<Login/>} />
           <Route path="Register" element={<Register/>} />
-          <Route path="/Dashboard" element={<DashboardMain />}>
-            <Route exact path="/Dashboard" element={<PrivateRoute><DashboardDefault/></PrivateRoute>} />
+          <Route path="/Dashboard" element={<PrivateRoute><DashboardMain /></PrivateRoute>}>
+            {/* <Route  path="/Dashboard" element={<PrivateRoute><DashboardDefault/></PrivateRoute>} /> */}
             <Route path="MyBooking" element={<MyBooking />} />
             <Route path="ServiceReview" element={<ServiceReview />} />
             <Route path="Payment" element={<Payment/>} />

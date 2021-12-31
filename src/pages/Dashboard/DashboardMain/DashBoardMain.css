@@ -13,14 +13,15 @@
   .dashboardOrigin{
   background-image: url(https://i.ibb.co/mXgJ7fy/moving-houses.png);
   padding-top: 50px;
-  padding-bottom: 400px;
+  padding-bottom: 500px;
   background-repeat: no-repeat;
   /* position: absolute;
   left:220px; */
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover; */
   background-size: cover;
+  
 
   }
   @media only screen and (max-width: 600px){
@@ -38,4 +39,7 @@
   background-size: cover;
   padding-bottom: 820px;
     }
+  }
+  .MotherDashboard{
+    /* padding-bottom: 200px; */
   }

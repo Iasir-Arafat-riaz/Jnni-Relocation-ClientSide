@@ -20,7 +20,7 @@
 .company-name{
     color: rgb(145, 8, 3);
     background-color: rgb(204, 199, 163);
-    text-shadow:2px 2px 2px #503932
+    /* text-shadow:2px 2px 2px #503932 */
     ;
     
     line-height: 60px;
@@ -30,7 +30,7 @@
 .company-name:hover{
     background-color:rgb(42, 51, 51);
     color:white;
-    text-shadow:3px 3px 3px #503932
+    /* text-shadow:3px 3px 3px #503932 */
 }
 .header-info{
     text-decoration: none;

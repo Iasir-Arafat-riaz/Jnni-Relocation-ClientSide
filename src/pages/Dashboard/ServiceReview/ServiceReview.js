@@ -40,7 +40,7 @@ const ServiceReview = () => {
       rating: rating,
     };
     console.log(commentObject);
-    axios.post("http://localhost:2021/reviews", commentObject).then((res) => {
+    axios.post("https://afternoon-dawn-04949.herokuapp.com/reviews", commentObject).then((res) => {
       console.log(res.status);
       if (res.status === 200) {
         setUserComment("");
