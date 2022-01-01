@@ -23,11 +23,9 @@ const SingleReview = (props) => {
               </h6>
             </Card.Title>
 
-            <p>
-              <b>{email}</b>
-            </p>
+           <small> {email}</small>
             <Card.Text>
-              <p>{cmommentFig}</p>
+              <p><i class="far fa-comment"></i> {cmommentFig}</p>
             </Card.Text>
 
             {rating === 5 ? (
@@ -47,18 +45,27 @@ const SingleReview = (props) => {
                 <FontAwesomeIcon icon={faStar} />
               </div>
             ) : rating < 4 && rating >= 3 ? (
-              <div className="icons">
-                <FontAwesomeIcon icon={faStar} />
+              <div >
+                <FontAwesomeIcon className="icons" icon={faStar} />
+                <FontAwesomeIcon className="icons" icon={faStar} />
+                <FontAwesomeIcon className="icons" icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
               </div>
             ) : rating < 3 && rating >= 2 ? (
-              <div className="icons">
+              <div >
+                <FontAwesomeIcon className="icons" icon={faStar} />
+                <FontAwesomeIcon className="icons" icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
               </div>
             ) : (
-              <div className="icons">
+              <div >
+                <FontAwesomeIcon className="icons" icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
               </div>
             )}
