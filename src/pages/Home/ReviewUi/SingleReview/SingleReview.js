@@ -39,10 +39,11 @@ const SingleReview = (props) => {
                 <FontAwesomeIcon icon={faStar} />
               </div>
             ) : rating < 5 && rating >= 4 ? (
-              <div className="icons">
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
+              <div >
+                <FontAwesomeIcon className="icons" icon={faStar} />
+                <FontAwesomeIcon className="icons" icon={faStar} />
+                <FontAwesomeIcon className="icons" icon={faStar} />
+                <FontAwesomeIcon className="icons" icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
               </div>
             ) : rating < 4 && rating >= 3 ? (

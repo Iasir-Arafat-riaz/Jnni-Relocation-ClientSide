@@ -19,7 +19,7 @@ const OfficeRelocate = () => {
             <div class="photo-details">
               <h3><b>Corporate Relocation</b></h3>
               <p>
-              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Dhaka Movers hereby offers an extensive range of services in office shifting within the limited possible budget for you.
+              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Jinni Relocation hereby offers an extensive range of services in office shifting within the limited possible budget for you.
               </p>
             </div>
           </div>
@@ -30,7 +30,7 @@ const OfficeRelocate = () => {
             <div class="photo-details">
               <h3><b>Corporate Relocation</b></h3>
               <p>
-              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Dhaka Movers hereby offers an extensive range of services in office shifting within the limited possible budget for you.
+              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Jinni Relocation hereby offers an extensive range of services in office shifting within the limited possible budget for you.
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ const OfficeRelocate = () => {
             <div class="photo-details">
               <h3><b>Corporate Relocation</b></h3>
               <p>
-              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Dhaka Movers hereby offers an extensive range of services in office shifting within the limited possible budget for you.
+              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Jinni Relocation hereby offers an extensive range of services in office shifting within the limited possible budget for you.
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@ const OfficeRelocate = () => {
             <div class="photo-details">
               <h3><b>Corporate Relocation</b></h3>
               <p>
-              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Dhaka Movers hereby offers an extensive range of services in office shifting within the limited possible budget for you.
+              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Jinni Relocation hereby offers an extensive range of services in office shifting within the limited possible budget for you.
               </p>
             </div>
           </div>
@@ -64,7 +64,7 @@ const OfficeRelocate = () => {
             <div class="photo-details">
               <h3><b>Corporate Relocation</b></h3>
               <p>
-              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Dhaka Movers hereby offers an extensive range of services in office shifting within the limited possible budget for you.
+              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Jinni Relocation hereby offers an extensive range of services in office shifting within the limited possible budget for you.
               </p>
             </div>
           </div>
@@ -75,7 +75,7 @@ const OfficeRelocate = () => {
             <div class="photo-details">
               <h3><b>Corporate Relocation</b></h3>
               <p>
-              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Dhaka Movers hereby offers an extensive range of services in office shifting within the limited possible budget for you.
+              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Jinni Relocation hereby offers an extensive range of services in office shifting within the limited possible budget for you.
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ const OfficeRelocate = () => {
             <div class="photo-details">
               <h3><b>Corporate Relocation</b></h3>
               <p>
-              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Dhaka Movers hereby offers an extensive range of services in office shifting within the limited possible budget for you.
+              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Jinni Relocation hereby offers an extensive range of services in office shifting within the limited possible budget for you.
               </p>
             </div>
           </div>
@@ -97,7 +97,7 @@ const OfficeRelocate = () => {
             <div class="photo-details">
               <h3><b>Corporate Relocation</b></h3>
               <p>
-              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Dhaka Movers hereby offers an extensive range of services in office shifting within the limited possible budget for you.
+              Thus hiring experienced packers and movers has no substitute when you are planning corporate shifting. Jinni Relocation hereby offers an extensive range of services in office shifting within the limited possible budget for you.
               </p>
             </div>
           </div>
