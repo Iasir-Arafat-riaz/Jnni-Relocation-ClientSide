@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../Shared/Footer/Footer';
 import Banner from '../Banner/Banner';
 import OfficeRelocate from '../OfficeRelocate/OfficeRelocate';
 import Recommended from '../Recommended/Recommended';
@@ -12,6 +13,7 @@ const HomeMain = () => {
            <Recommended></Recommended>
            <OfficeRelocate></OfficeRelocate>
            <ReviewUi></ReviewUi>
+           <Footer></Footer>
         </div>
     );
 };

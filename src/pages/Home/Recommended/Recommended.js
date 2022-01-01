@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Row } from "react-bootstrap";
 import SingleService from "./SingleService/SingleService";
-
+import "./Recommended.css"
 const Recommended = () => {
   const [recomended, setRecomended] = useState([]);
   useEffect(() => {
@@ -25,7 +25,7 @@ const Recommended = () => {
         </div>
 
         <div data-aos="fade-up" className="col-md-4 col-sm-12">
-          <h4>
+          <h4 className="recomendedDetails">
             Planning to shift your house to a new location? Looking for
             hassle-free house shifting services in Bangladesh near you for safe
             relocation? Don’t worry. Welcome To India Packers And Movers Company
