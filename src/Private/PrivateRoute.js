@@ -1,9 +1,10 @@
 import React from "react";
 import { Spinner } from "react-bootstrap";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 
 const PrivateRoute = ({ children }) => {
+  const location=useLocation()
   const { user, isLoading } = useAuth();
   if (isLoading) {
     return (
@@ -13,7 +14,7 @@ const PrivateRoute = ({ children }) => {
       </div>
     );
   }
-  return <div>{user.email ? children : <Navigate to="/login" />}</div>
+  return <div>{user.email ? children : <Navigate state={{from:location}} to="/login"/>}</div>
 };
 
 export default PrivateRoute;

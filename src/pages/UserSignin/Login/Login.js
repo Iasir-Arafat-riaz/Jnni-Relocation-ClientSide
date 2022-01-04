@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
+// import useFirebase from '../../../hooks/useFirebase';
 import "./Login.css"
 const Login = () => {
 
     const [userLoggedIn,setUserLoggedIn]=useState({})
 const location = useLocation()
 const navigate = useNavigate()
-    const {googleSignIn,error}=useFirebase()
+    const {googleSignIn,error}=useAuth()
 
     //login with email and password
     const loginInput=(e)=>{

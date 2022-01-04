@@ -1,25 +1,11 @@
-/* #sidebar-wrapper {
-    min-height: 100vh;
-    margin-left: -15rem;
-    -webkit-transition: margin 0.25s ease-out;
-    -moz-transition: margin 0.25s ease-out;
-    -o-transition: margin 0.25s ease-out;
-    transition: margin 0.25s ease-out;
-  } */
-.dashboardItems{
-  /* background-color: rgb(9, 13, 104); */
-}
+
 
   .dashboardOrigin{
   background-image: url(https://i.ibb.co/mXgJ7fy/moving-houses.png);
   padding-top: 50px;
   padding-bottom: 500px;
   background-repeat: no-repeat;
-  /* position: absolute;
-  left:220px; */
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
+  
   background-size: cover;
   
 
@@ -40,6 +26,4 @@
   padding-bottom: 820px;
     }
   }
-  .MotherDashboard{
-    /* padding-bottom: 200px; */
-  }
+  

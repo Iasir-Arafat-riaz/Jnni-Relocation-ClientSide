@@ -9,11 +9,9 @@ const DashboardMain = () => {
       <div style={{ positon: "relative" }} className="row ">
         <div className="col-md-2 dashboardItems">
           <div id="wrapper">
-            {/* Sidebar */}
+           
             <div class="bg-white" id="sidebar-wrapper">
-              {/* <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
-            <i class="fas fa-user-secret  "></i>Dashboard
-          </div> */}
+             
               <div class="list-group list-group-flush my-3">
                 <Link
                   to="/Dashboard/MyBooking"
