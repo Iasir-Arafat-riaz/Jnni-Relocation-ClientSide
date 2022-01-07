@@ -12,13 +12,15 @@
     transition: transform 2s;
 } */
 
+
 .homeBook{
-    background-color: rgb(71, 73, 73);
-    color: white;
-    padding: 6px;
-}
-.homeBook:hover{
     background-color: rgb(7, 8, 8);
     color: goldenrod;
-   
+    padding: 6px;
+    border: 0px;
+}
+.homeBook:hover{
+    background-color: rgb(13, 16, 61);
+    color: white;
+    
 }

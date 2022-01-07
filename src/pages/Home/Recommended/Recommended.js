@@ -14,7 +14,7 @@ const Recommended = () => {
 
   return (
     <div className="m-4">
-      <h1 className="text-center">Recommended services here</h1>
+      <h1 className="text-center"><b><i>Recommended services here</i></b></h1>
       <div className="row mt-5">
         <div className="col-md-8 col-sm-12">
           <Row xs={1} md={2} className="g-4">
