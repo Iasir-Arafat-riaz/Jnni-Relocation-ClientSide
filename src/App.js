@@ -33,14 +33,14 @@ function App() {
           <Route path="/" element={<HomeMain />}></Route>
           <Route path="/Home" element={<HomeMain />}></Route>
           <Route path="/Home" element={<HomeMain />}></Route>
-          <Route path="/Services"element={<AllServices/>}/>
+          <Route path="/Services"element={<PrivateRoute><AllServices/></PrivateRoute>}/>
           <Route path="/Service/:id" element={<PrivateRoute><Booking/></PrivateRoute>} />
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/AboutUs" element={<AboutUs/>}/>
           <Route path="Login" element={<Login/>} />
           <Route path="Register" element={<Register/>} />
           <Route path="/Dashboard" element={<PrivateRoute><DashboardMain /></PrivateRoute>}>
-            {/* <Route  path="/Dashboard" element={<PrivateRoute><DashboardDefault/></PrivateRoute>} /> */}
+            <Route  path="/Dashboard" element={<PrivateRoute><DashboardDefault/></PrivateRoute>} />
             <Route path="MyBooking" element={<MyBooking />} />
             <Route path="ServiceReview" element={<ServiceReview />} />
             <Route path="Payment" element={<Payment/>} />

@@ -1,0 +1,37 @@
+.footer{
+    background-color: rgba(2, 2, 68, 0.918);
+    color: whitesmoke;
+    padding: 80px;
+    margin-top: 50px;
+}
+
+.footer img {
+    width: 20%;
+}
+.footerCoName{
+    display: inline;
+}
+
+.footerColumn{
+    display: flex;
+    
+}
+@media only screen and (max-width: 600px) {
+    
+    .footer img {
+        width: 50%;
+        
+    }
+    .footer{
+        text-align: center;
+    }
+
+    /* .footer img{
+        display: block;
+    } */
+    .footerColumn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

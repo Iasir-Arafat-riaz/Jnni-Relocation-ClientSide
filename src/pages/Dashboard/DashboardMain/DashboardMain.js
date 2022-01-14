@@ -31,7 +31,7 @@ const DashboardMain = () => {
                 >
                   <i class="fas fa-paperclip me-2"></i>Payment
                 </Link>
-                <Link
+                {/* <Link
                   to="/Dashboard/AddService"
                   class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
                 >
@@ -54,7 +54,7 @@ const DashboardMain = () => {
                   class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
                 >
                   <i class="fas fa-map-marker-alt me-2"></i>Make Admin
-                </Link>
+                </Link> */}
 
                 <Link
                   onClick={logOut}
