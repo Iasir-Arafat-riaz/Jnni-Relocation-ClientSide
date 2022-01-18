@@ -32,7 +32,7 @@ const cancelOrder = (id) => {
 
     return (
         <div className="only-My-Order">
-      <h2 className="my-order-header"><b>Here Show Your Confirmed Order</b></h2>
+      <h2 className="text-center common"><b>Here Show Your Confirmed Order</b></h2>
       <div className="myOrder-Div ">
           {onlyMyBooking.map((orderInfo) => (
             <div className="my-order" key={orderInfo._id}>

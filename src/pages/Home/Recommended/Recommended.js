@@ -14,14 +14,14 @@ const Recommended = () => {
     setLoader(false);
   }, []);
 
-  const slice = recomended.slice(0, 4);
+  // const slice = recomended.slice(0, 4);
   console.log(loader);
   if (loader) {
     return <Loading />;
   }
   return (
     <div className="m-4">
-      <h1 className="text-center">
+      <h1 className="text-center common">
         <b>
           <i>Recommended services here</i>
         </b>
@@ -29,7 +29,7 @@ const Recommended = () => {
       <div className="row mt-5">
         <div className="col-md-8 col-sm-12">
           <Row xs={1} md={2} className="g-4">
-            {slice.map((service) => (
+            {recomended.map((service) => (
               <SingleService
                 key={service.serviceId}
                 singleService={service}

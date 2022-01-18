@@ -9,7 +9,7 @@ const OfficeRelocate = () => {
   }
   return (
     <div className="xyz">
-      <h1>Corporate Office Moving</h1>
+      <h1 className="common"><b><i>Corporate Office Moving</i></b></h1>
       <div onClick={corporateOfcHandler} className="ofcRelcocation">
         <div data-aos="zoom-in" class="photo-album ">
           <div class="photo-frame">

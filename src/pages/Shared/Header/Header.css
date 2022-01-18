@@ -48,4 +48,8 @@
 
 
 
-body{background-color:rgb(238, 231, 223) ;}
+body{background-color:rgb(240, 216, 220);}
+
+*{
+    border: 0px;
+}

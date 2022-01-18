@@ -14,7 +14,7 @@ fetch("https://afternoon-dawn-04949.herokuapp.com/reviews")
     console.log(reviews);
     return (
         <div>
-            <h2 className="common-header text-center"> Customer Review</h2>
+            <h2 className="common-header text-center common"> <b><i>Customer Review</i></b></h2>
             <Row xs={1} md={5} className="g-4 m-3">
           {reviews.map((review, index) => (
             <SingleReview review={review} key={index}></SingleReview>

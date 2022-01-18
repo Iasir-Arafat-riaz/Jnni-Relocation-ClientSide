@@ -25,7 +25,7 @@ const Booking = () => {
     const date = new Date();
     const localDate = date.toLocaleDateString();
     data.orderDate = localDate;
-    // data.status = "pending";
+    data.status = "pending";
     console.log(data);
 
 axios.post("https://afternoon-dawn-04949.herokuapp.com/booking",data)
