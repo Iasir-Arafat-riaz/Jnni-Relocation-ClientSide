@@ -7,7 +7,7 @@ const AllServices = () => {
     const [services,setServices]=useState([])
     const [load,setLoad]=useState(true)
     useEffect(()=>{
-        fetch("https://afternoon-dawn-04949.herokuapp.com/services")
+        fetch("https://afternoon-dawn-04949.herokuapp.com/allServices")
         .then(res=>res.json())
         .then(data=>setServices(data))
         setLoad(false)
