@@ -9,12 +9,12 @@ const Login = () => {
     const [userLoggedIn,setUserLoggedIn]=useState({})
 const location = useLocation()
 const navigate = useNavigate()
-    const {googleSignIn,error}=useAuth()
+    const {googleSignIn,error,signInUser}=useAuth()
 
     //login with email and password
     const loginInput=(e)=>{
         console.log(e.target.value)
-        const name =e.target.name;
+        const name = e.target.name;
         const fieldValue= e.target.value;
     
         const signInUser ={...userLoggedIn}
@@ -22,10 +22,10 @@ const navigate = useNavigate()
         setUserLoggedIn(signInUser)
     
       }
-      console.log(userLoggedIn)
+      // console.log(userLoggedIn)
       const userLogin=(e)=>{
     
-        // visitorLogIn(userLoggedIn.email,userLoggedIn.password,history,location)
+        signInUser(userLoggedIn.email,userLoggedIn.password,navigate,location)
         
         e.preventDefault()
       }
@@ -37,9 +37,9 @@ const navigate = useNavigate()
               <b>{error}</b>
             </h6>
         <form onSubmit={userLogin} action="">
-        <input placeholder="Enter Your Email" name="email" type="email" onBlur={loginInput} />
+        <input required placeholder="Enter Your Email" name="email" type="email" onBlur={loginInput} />
         <br/>
-        <input placeholder="Enter Your Password" onBlur={loginInput} type="password" name="password" id="" />
+        <input required placeholder="Enter Your Password" onBlur={loginInput} type="password" name="password" id="" />
         <br/>
         <input type="submit" value="Login Now" className="login-button" />
         </form>

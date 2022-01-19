@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import { Spinner } from "react-bootstrap";
+import Modal from "react-modal/lib/components/Modal";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 // import useFirebase from "../../../hooks/useFirebase";
 import useAuth from "../../../hooks/useAuth";
 import "./Register.css";
 
 const Register = () => {
   const [userRegister, setUserRegister] = useState({});
+ 
   // isLoading, error
-  const { user, userRegistration, isLoading, success } = useAuth();
+  const { user, userRegistration, isLoading, success,error } = useAuth();
   console.log(user);
 
   const navigate = useNavigate();
@@ -29,9 +32,17 @@ const Register = () => {
     e.preventDefault();
     // console.log(userRegister);
     if (userRegister.password !== userRegister.password2) {
-      alert("password not matched");
+      // alert("password not matched");
+      Swal.fire({
+        title: 'Oops...',
+        imageUrl: 'https://i.ibb.co/6gvrQ1r/mini-Jinni.png',
+        text: 'Password not matched!',
+        footer: 'Set password correctly and try again'
+      })
+
       return;
     }
+   
     userRegistration(
       userRegister.email,
       userRegister.password,
@@ -93,6 +104,8 @@ const Register = () => {
           </form>
           <br />
           <h6 className="text-success">{success}</h6>
+          <h6 className="text-danger">{error}</h6>
+         
           {/* ) */}
           {isLoading && <Spinner animation="border" variant="info" />}
           ----------------------

@@ -8,6 +8,7 @@ import {
   createUserWithEmailAndPassword,
   signOut,
   updateProfile,
+  signInWithEmailAndPassword
 } from "firebase/auth";
 FirebaseInitialize();
 const useFirebase = () => {
@@ -69,6 +70,25 @@ const useFirebase = () => {
       });
   };
 
+  //Sign in with username and password
+  const signInUser=(email, password,navigate,location)=>{
+    signInWithEmailAndPassword(auth, email, password)
+  .then((result) => {
+    // Signed in 
+    setUser(result.user) ;
+    setError("")
+    const destination = location?.state?.from || "/"
+    navigate(destination)
+    // ...
+  })
+  .catch((error) => {
+   
+    setError(error.message)
+  });
+
+  }
+
+
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       setIsLoading(true);
@@ -94,7 +114,7 @@ const useFirebase = () => {
   };
 
   console.log(user);
-  return { user, googleSignIn, logOut, userRegistration, error, isLoading,success };
+  return { user, googleSignIn, logOut, userRegistration,signInUser, error, isLoading,success };
 };
 
 export default useFirebase;
