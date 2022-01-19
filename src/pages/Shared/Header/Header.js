@@ -13,6 +13,10 @@ const Header = () => {
     }
     // const {user,logOut}=useFirebase()
     const {user,logOut}=useAuth()
+// const fullName = user?.displayName
+// const firstChild = fullName.split(" ")
+// const newDisplayName = firstChild[0]
+
   return (
     <div className="jinniHeder">
       <div className="text-center">
@@ -29,13 +33,13 @@ const Header = () => {
           expand="lg"
           bg="secondary"
           variant="dark"
-          className="text-center jinni-navbar "
+          className=" jinni-navbar "
           sticky="top"
         >
           <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="m-auto">
+              <Nav >
                 <Navbar.Brand>
                   <NavLink
                  
@@ -45,9 +49,9 @@ const Header = () => {
                     })}
                     className="header-link"
                   >
-                    <h4>
+                    <h5>
                       <b>Home</b>
-                    </h4>
+                    </h5>
                   </NavLink>
                 </Navbar.Brand>
 
@@ -60,9 +64,9 @@ const Header = () => {
                     })}
                     className="header-link"
                   >
-                    <h4>
+                    <h5>
                       <b>Services</b>
-                    </h4>
+                    </h5>
                   </NavLink>
                 </Navbar.Brand>
 
@@ -76,9 +80,9 @@ const Header = () => {
                     className="header-link"
                   >
                     {/* {user.email&&<b>Dashboard</b>} */}
-                    <h4>
+                    <h5>
                       <b> DashBoard</b>
-                    </h4>
+                    </h5>
                   </NavLink>
                 </Navbar.Brand>}
 
@@ -91,10 +95,10 @@ const Header = () => {
                     })}
                     className="header-link"
                   >
-                    <h4>
+                    <h5>
                       {" "}
                       <b>Contact</b>
-                    </h4>
+                    </h5>
                   </NavLink>
                 </Navbar.Brand>
 
@@ -123,9 +127,9 @@ const Header = () => {
                     })}
                     className="header-link"
                   >
-                    <h4>
+                    <h5>
                       <b>About Us</b>
-                    </h4>
+                    </h5>
                   </NavLink>
                 </Navbar.Brand>
               </Nav>
@@ -139,7 +143,7 @@ const Header = () => {
             {user.email ? (
               
               <button onClick={logOut}  className="logOutHdr">
-               <b> Logout</b>
+               <b> <i class="fas fa-sign-out-alt"></i></b>
               </button>
             ) : (
               <Link to="/login">
