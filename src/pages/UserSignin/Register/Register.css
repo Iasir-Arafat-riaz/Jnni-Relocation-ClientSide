@@ -6,6 +6,7 @@
 
 .register-input {
   margin-top: 40px;
+ 
 }
 
 .register-submit {
@@ -14,7 +15,8 @@
 
 .regLink {
   text-decoration: none;
-  color: tomato;
+  color: rgb(221, 224, 11);
+ 
 }
 
 .register-section {
@@ -22,10 +24,16 @@
   
   
 }
+.regMain{
+  background-color: rgba(255, 235, 205, 0.575);
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+}
 
 .userRegister{
     margin: 0px;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
     background-image: url("https://i.ibb.co/54P0SVW/Online-Registration.png");
     background-repeat: no-repeat; 
      background-size: cover;
