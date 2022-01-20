@@ -5,11 +5,17 @@
     /* line-height: 100px; */
 }
 .loginButtonHdr{
-    background-color: yellowgreen;
+    background-color: rgb(179, 190, 24);
     border-radius: 5px;
-    padding: 5px 10px;
-    color: rgb(70, 69, 67);
+    padding: 2px 5px;
+    color: rgb(4, 87, 2);
 }
+.loginButtonHdr:hover{
+    background-color: rgb(36, 153, 7);
+    
+    color: rgb(15, 10, 1);
+}
+
 .logOutHdr{
     border-radius: 5px;
     padding: 5px 10px;
