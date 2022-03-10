@@ -31,8 +31,8 @@ const ServiceReview = () => {
   };
   console.log(rating);
 
-  const reviewForm = () => {
-    // e.preventDefault()
+  const reviewForm = (e) => {
+    e.preventDefault()
     const commentObject = {
       name: user.displayName,
       email: user.email,
@@ -45,6 +45,7 @@ const ServiceReview = () => {
       if (res.status === 200) {
         setUserComment("");
         Swal.fire("Your Review Submitted");
+        
       }
     });
   };
@@ -52,7 +53,8 @@ const ServiceReview = () => {
     <div className="review text-center">
       <h1>Here write your review </h1>
 
-      <textarea
+     <form action="" onSubmit={reviewForm}>
+     <textarea
         required
         placeholder="Please Share Your Valuable Review"
         onBlur={comments}
@@ -78,9 +80,11 @@ const ServiceReview = () => {
         <b>5</b>
       </button>
       <br />
-      <button className="reviewSubmit" onClick={reviewForm}>
+      <input className="reviewSubmit" type="text" type="submit" value="Review"/>
+      {/* <input className="reviewSubmit" onClick={reviewForm}>
        <b> Review</b>
-      </button>
+      </input> */}
+     </form>
     </div>
   );
 };
